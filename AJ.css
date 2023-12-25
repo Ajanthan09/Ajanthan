@@ -1,4 +1,5 @@
 body{
+  overflow: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
@@ -8,7 +9,8 @@ body{
   text-align: left;
   background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(pexels-cátia-matos-1072179.jpg) ; 
   background-image: cover;
-  
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
   grid-template-columns: repeat(auto-fit,minmax(auto,1fr));
 }
 .nav-bar ul{
@@ -27,6 +29,7 @@ body{
   top: 0;
   width:100%;
   text-transform: uppercase;
+  font-weight: bold;
   /* filter: drop-shadow(-25px 5px 10px #FB8122); */
 }
 
@@ -44,6 +47,7 @@ ul li a{
 }
 header{
   margin-top: 10%;
+  margin-bottom: 150px;
 }
 p{
  
@@ -139,6 +143,7 @@ h6.title{
   /* display: -webkit-box; */
   /* display: -ms-flexbox; */
   display: flex;
+  /* width: fit-content; */
   /* -webkit-box-align: center;
   -webkit-align-items: center; 
       -ms-flex-align: center;
@@ -146,7 +151,7 @@ h6.title{
 }
 .header .container .frame {
 
-  width: auto;
+  width: fit-content;
   height: 550px;
   border: 3px solid none;
   background: none;
@@ -185,6 +190,7 @@ img {
 }
 
 .header .container .infos p {
+  width: fit-content;
   margin-top: -5px;
   margin-right: 15%;
   text-align: justify;
@@ -194,28 +200,60 @@ img {
 .nav-link1{
   color:#438945;
 }
-@media only screen and (max-width: 800px) {
+.full{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: horizontal;
+  overflow: hidden;
+}
+@media only screen and (max-width: 500px) {
   body{
+    margin-bottom: 850px;
+    overflow:hidden ;
+    /* width: 800px; */
+  }
+  *{
+
     width: fit-content;
   }
   .infos{
-    width: 250px;
-    margin-right: -50px;
-    margin-left: -45px;
+    width: 450px;
   }
+
   .fa{
     padding: 5px;
   font-size: 5px;
   margin: 2px 2px;
   
   }
- 
+  .fa-instagram{
+    margin-left: 25px;
+  }
+
+  
+  .header .container .infos p {
+    width: 300px;
+
+  }
+  .header .container{
+    margin-top: 120px;
+  }
+  
+
   
 }
+@media  screen and (min-width: 500px)and(max-width:750px) {
+  *{
+    overflow-x: scroll;
+    width: fit-content;
+  }
+  .infos{
+    width: 350px;
+  }
+  .frame{
+    overflow:hidden ;
+    
+  }
 
-.full{
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: horizontal;
-  overflow: hidden;
+  
 }
