@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     /* grid-template-columns: repeat(auto-fit,minmax(auto,1fr)); */
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(pexels-cátia-matos-1072179.jpg) ; 
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(pexels-cátia-matos-1072179.jpg) ;
+    background-size: cover; 
 }
 
 .outerbor {
@@ -118,7 +119,7 @@ hr {
     opacity: 1;
     visibility: visible;
 }
-.overlay-container {
+/* .overlay-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -127,28 +128,53 @@ hr {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, backdrop-filter 0.3s ease;
-    backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
-}
+    backdrop-filter: blur(5px); /* Adjust the blur intensity as needed 
+}*/
 
 /* Enlarge the thumbnail on hover */
 .image-container:hover .thumbnail {
     transform: scale(1); /* Adjust the scale factor as needed */
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (min-width: 450px) {
     
     .container1{
-        margin-left: 5px;
+        margin-left: 10px;
         width:min-content;
     }
     .outerbor {
+        
         margin-right: 10px;
         margin-left: 5px;
         width: fit-content;
+         justify-content: center;
+        align-items: center; 
 
     }
     .container2{
+        
         margin-left: 5px;
         margin-right: 10px;
-        width:min-content;
+        width:fit-content;
     }   
+} */
+@media only screen and (max-width: 768px) {
+    
+    .outerbor {
+        flex-direction: row;
+        margin-left: 50px; 
+        height: max-content;
+        width: fit-content;
+    }
+
+    .container1,
+    .container2 {
+        /* align-items: center; */
+        margin-top: 200PX;
+        flex: 1;
+        min-width: auto;
+    }
+    .popup{
+        left: 150px;
+    }
+
 }
