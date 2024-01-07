@@ -1,5 +1,5 @@
 body{
- /* overflow: hidden;*/
+  overflow: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
@@ -242,7 +242,7 @@ img {
 
   
 }
-@media  screen and (min-width: 500px)and(max-width:750px) {
+@media  screen and (min-width: 300px)and(max-width:750px) {
   *{
     overflow-x: scroll;
     width: fit-content;
