@@ -248,7 +248,7 @@ img {
     width: fit-content;
   }
   body{
-    overflow: scroll;
+    overflow: hidden;
   }
   .infos{
     width: 350px;
