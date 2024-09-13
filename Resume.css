@@ -13,12 +13,6 @@ body {
 .outerbor {
     display: flex;
     justify-content: space-between;
-    
-    
-    /* margin: 20px; */
-    /* margin-right: 50px;
-    padding-right: 10px; */ 
-    
 }
 
 .container1 {
@@ -101,17 +95,18 @@ hr {
     
     .outerbor {
         flex-direction: row;
-        margin-left: 50px; 
         height: max-content;
         width: fit-content;
     }
 
+
     .container1,
     .container2 {
-        /* align-items: center; */
-        margin-top: 200PX;
+        
+        margin-top: 150PX;
         flex: 1;
-        min-width: auto;
+        width: 350px;
+        
     }
     .popup{
         left: 150px;
